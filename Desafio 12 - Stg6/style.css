@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: roboto;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 11.5rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+#search{
+    display: flex;
+    gap: 8px;
+}
+
+#search input{
+    background-color: #06181C;
+
+    line-height: 1.6rem;
+    font-weight: 400;
+
+    border: none;
+    border-radius: 5px;
+
+    width: 46.2rem;
+
+    padding: 1.6rem;
+}
+
+#search button{
+    background-color: #065E7C;
+
+    line-height: 2.4rem;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 1.2rem 3.2rem;
+
+    display: flex;
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+#search button:hover{
+    background-color: white;
+    color: #065E7C;
+}
+
+#search button:hover svg path{
+    fill: #065E7C;
+}
+
+table{
+    border-collapse: collapse;
+    width: 112rem;
+    margin-top: 8.7rem;
+}
+
+thead{
+    background-color: #092D38;
+}
+
+thead th{
+    text-align: start;
+}
+
+thead th:first-child{
+    padding: 1.6rem 0 1.6rem 4rem;
+    border-top-left-radius: 1.2rem;
+}
+
+thead th:last-child{
+    border-top-right-radius: 1.2rem;
+}
+
+tbody{
+    overflow: auto;
+    max-height: 44.8rem;
+}
+
+tbody tr:nth-child(even){
+    background-color: #06181C;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #06161B80;
+}
+
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 1.2rem;
+}
+
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 1.2rem;
+}
+
+.user{
+    display: flex;
+    padding: 2.4rem 0 2.4rem 4rem;
+    gap: 1.6rem;
+}
+
+.user img{
+    width: 5.6rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user a{
+    text-decoration: none;
+}
+
+.user a span{
+    font-weight: 400;
+}
+
+.remove{
+    border: none;
+    color: #F75A68;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: initial;
+    background-color: inherit;
+}

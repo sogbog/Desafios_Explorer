@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 465px;
+    background-color: #293241;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+body{
+    background: #BFD7E4;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, legend, button{
+    font-family: 'Staatliches', cursive;
+}
+
+h1{
+    font-size: 36px;
+    line-height: 45px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+header{
+    margin-top: 107px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+p{
+    height: 48px;
+}
+
+.imgwrapper{
+    margin-bottom: 32px;
+    height: 100px;
+}
+
+/* tentei fazer com os pseudo elementos before e after mas ficava bugando, se botar algum elemento por cima fica uma bordinha branca do background do form e tambem fiz sem background no form e ajustei o tamanho de cada elemento e botei background branco, mas desse jeito o form fica todo picado e eu nao gostei disso. Com position absolute, nao consigo deixar precisa a localizacao, e com relative o tamanho do fieldset nao se muda mesmo sem a legend.
+O melhor jeito que eu consegui pensar para manter do jeito que eu quero é fazendo o form com bordas menores que a legend, desse jeito ele nao aparece no fundo.*/
+#personal_info{
+    width: 750px;
+    height: 133px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F67669;
+    border-radius: 20px 20px 0 0;
+    margin: 0 auto;
+    color: white;
+    padding: 0;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+legend{
+    font-size: 24px;
+    line-height: 34px;
+    color: #253B51;
+    width: 622px;
+    margin: 0 auto 31px auto;
+    text-align: center;
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 8px;
+}
+
+form{
+    background-color: white;
+    width: 750px;
+    margin: 0 auto 392px auto;
+    border-radius: 25px 25px 20px 20px;
+}
+
+.fieldsetwrapper{
+    margin-top: 34px;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    width: 622px;
+    margin: auto;
+}
+
+.inputwrapper{
+    width: 622px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea{
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.namewrapper{
+    display: flex;
+    width: 622px;
+    margin: 0 auto 18px auto;
+    gap: 22px;
+}
+
+input{
+    height: 55px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+input:invalid, textarea:invalid{
+    border: 1px solid #FF0101;
+}
+
+label{
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-bottom: 8px;
+}
+
+span{
+    color: #C1BCCC;
+    margin-left: 9px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+span:hover{
+    color: #6e6c74;
+}
+
+select{
+    width: 300px;
+    height: 55px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+textarea{
+    height: 167px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 3px 5px 3px 5px;
+    resize: none; 
+}
+
+.checkboxwrapper{
+   position: relative;
+   margin: 0 auto 0 auto;
+}
+
+.checkboxwrapper label::before{
+    content: '';
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: #FAFAFC;
+    border: 2px solid #E6E6F0;
+    border-radius: 8px
+}
+
+.checkboxwrapper label{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0;
+    height: 24px;
+    width: 622px;
+    margin: auto;
+}
+
+.checkboxwrapper input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
+.checkboxwrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  }
+
+  .checkboxwrapper input:focus + label::before {
+    outline: 2px solid black;
+  }
+
+.datewrapper{
+    display: flex;
+}
+
+#date{
+    width: 300px;
+}
+
+#begintime{
+    width: 140px;
+    margin-right: 10px;
+}
+
+#endtime{
+    width: 140px;
+}
+
+.buttonwrapper{
+    display: flex;
+    justify-content: center;
+    height: 115px;
+    margin-top: 64px;
+}
+
+button{
+    width: 622px;
+    height: 51px;
+    color: white;
+    background-color: #F67669;
+    border-style: none;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+button:hover{
+    background-color: #d36255;
+}

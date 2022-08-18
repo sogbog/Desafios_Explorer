@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --pFnt-colorLight: #323238;
+    --btnBgnd-colorLight: hsl(240, 9%, 89%);
+    --btnActivedBgnd-colorLight: hsl(194, 97%, 31%);
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: clamp(5rem ,10vw,19.2rem);
+}
+
+.timer{
+    font-family: 'Roboto';
+    font-size: 12.6rem;
+    color: var(--pFnt-colorLight);
+}
+
+.time{
+    display: flex;
+    height: fit-content;
+}
+
+button:focus {
+    outline: none;
+}
+
+.time_controls{
+    display: flex;
+    gap: 4rem;
+    width: fit-content;
+    margin: auto;
+}
+
+svg path{
+    fill: var(--pFnt-colorLight)
+}
+
+.time_controls button{
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.sound_controls{
+    min-width: clamp(27rem,20vw,30.8rem);
+    min-height: clamp(27rem,21vw,33.6rem);
+    display: grid;
+    grid-template-areas: "A B" "C D";
+    gap: 3.2rem;
+}
+
+.sound_controls button{
+    background-color: var(--btnBgnd-colorLight);
+    border-style: none;
+    border-radius: 2.4rem;
+    cursor: pointer;
+}
+
+.sound_controls .active{
+    background-color: var(--btnActivedBgnd-colorLight);
+}
+
+.sound_controls .active svg path{
+    fill: white;
+}

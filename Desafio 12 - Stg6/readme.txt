@@ -1,0 +1,1 @@
+Deram varios bugs pra fazer funcionar a tabela na estetica proposta, como o proposito desse desafio era trabalhar conceitos de javascript e eu ja tava cansado de tentar arrumar, deixei assim mesmo kkkkkkk.
