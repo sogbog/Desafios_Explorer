@@ -1,4 +1,4 @@
-# Desafio 1
+# Desafio 2
 Desafio introdutório onde assim como no primeiro, o objetivo era consertar bugs no código fonte da página e retorná-la à aparência correta de acordo com o layout do Figma.
 
 Tópico do módulo: **Introdução ao HTML e CSS**
